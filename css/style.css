@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Hiragino Sans GB",
+    "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+a {
+  color: #0080ff;
+  text-decoration: none;
+}
+svg {
+  background: transparent;
+}
+#container {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+#vertical-center {
+  position: absolute;
+  top: 38%;
+  left: 8%;
+  transform: translate(0%, -50%);
+}
+#title {
+  color: black;
+  font-weight: bold;
+  font-size: 42px;
+}
+#desc {
+  color: #666666;
+  margin-left: 8px;
+  font-size: 24px;
+}
+#kotlin_text {
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#java_text {
+  background: linear-gradient(to right, #f8981d, #4f80a0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#python_text {
+  background: linear-gradient(to right, #2e68a3, #ffd745);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#android_text {
+  background: #666666;
+  border-bottom: 4px solid #71d88c;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#footer {
+  height: 48px;
+  width: 85%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #efc14f;
+}
+#social {
+  margin-top: 16px;
+}
+.site-social-link {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding: 8px;
+  position: relative;
+}
+.site-social-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.site-social-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+#left-widget {
+  float: right;
+  background-color: #648e93;
+}
+#left-widget p {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 7.405vh;
+  color: #b6a476;
+  position: relative;
+}
+
+.widget-text {
+  transition: transform 0.2s ease-in-out;
+  animation: anime-a 2s infinite;
+}
+#widget-text-a,
+#widget-text-b,
+#widget-text-c,
+#widget-text-d {
+  writing-mode: vertical-rl;
+}
+
+@keyframes anime-a {
+  0% {
+    transform: translate3d(-50px, 0px, 20px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(-40px, 0px, 0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(-50px, 0px, 20px);
+  }
+}
