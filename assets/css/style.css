@@ -40,6 +40,10 @@ svg {
   color: #666666;
   margin-left: 8px;
   font-size: 24px;
+  line-height: 1.6;
+}
+#pinyin {
+  margin-left: 8px;
 }
 #kotlin_text {
   background: linear-gradient(to right, red, blue);
