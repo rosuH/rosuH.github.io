@@ -1,188 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>About rosu</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="assets/images/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="assets/images/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="assets/images/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="assets/images/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="assets/images/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="assets/images/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="assets/images/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="assets/images/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="assets/images/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="assets/images/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/images/favicon-16x16.png"
-    />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="assets/images/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"
-  </head>
-  <body>
-    <div id="left-widget">
-      <p class="widget-text" id="widget-text-a">2</p>
-      <p class="widget-text" id="widget-text-b">0</p>
-      <p class="widget-text" id="widget-text-c">2</p>
-      <p class="widget-text" id="widget-text-d">0</p>
-      <p class="widget-text" id="widget-text-e">文</p>
-      <p class="widget-text" id="widget-text-f">化</p>
-      <p class="widget-text" id="widget-text-g">大</p>
-      <p class="widget-text" id="widget-text-h">冒</p>
-      <p class="widget-text" id="widget-text-i">险</p>
-    </div>
+
+<head>
+  <title>About rosu</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <script>
+    (function (d) {
+      var config = {
+          kitId: 'xhp8idv',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+</head>
+
+<body>
+  <div class="bg-image">
     <div id="container">
+      
       <div id="vertical-center">
-        <h1 id="title">Public information about rosu.</h1>
+        <div class="content-title">
+          <div class="title" data-text="『現在可以公開的情報』">
+            『現在可以公開的情報』
+            <div class="white"></div>
+            <div class="white"></div>
+            <div class="white"></div>
+            <div class="white"></div>
+          </div>
+        </div>
         <div id="desc">
           <p>
-            &#8226; Full time <span id="android_text">Mobile developer</span>,
-            using <span id="kotlin_text">Kotlin</span>,
-            <span id="java_text">Java</span> and
-            <del><span id="python_text">Python</span></del
-            >.
+            &#8226; Full time <span class="android-text">Android developer.</span>
           </p>
-          <p>&#8226; bho2 ghe2 diê5 suan3 uê7 zêng1 tong1 do1 di7 cou1 kao2<a id="pinyin" target="_blank" href="http://www.czyzd.com/search?keyword=%e5%96%9c%e6%ac%a2%e5%90%83%e8%8c%b6%e7%9c%8b%e4%b9%a6%e7%9c%8b%e7%94%b5%e8%a7%86%e5%89%a7%e5%92%8c%e5%8a%a8%e7%94%bb%e6%9c%89%e6%97%b6%e4%b9%9f%e5%96%9c%e6%ac%a2%e7%88%ac%e5%b1%b1"><img alt="发音" src="assets/images/sound.svg" width="24" height="20"/></a></a></p>
-          <p>&#8226; 喜欢吃茶、看书、看电视剧和动画；有时也喜欢爬山</p>
-          <p>&#8226; 渴望自我成長和進步，擁抱變化</p>
+          <p>&#8226; bho2 ghe2 diê5 suan3 uê7 zêng1 tong1 do1 di7 cou1 kao2<a id="pinyin" target="_blank"
+              href="http://www.czyzd.com/search?keyword=%e5%96%9c%e6%ac%a2%e5%90%83%e8%8c%b6%e7%9c%8b%e4%b9%a6%e7%9c%8b%e7%94%b5%e8%a7%86%e5%89%a7%e5%92%8c%e5%8a%a8%e7%94%bb%e6%9c%89%e6%97%b6%e4%b9%9f%e5%96%9c%e6%ac%a2%e7%88%ac%e5%b1%b1"><img
+                alt="发音" src="assets/images/sound.svg" width="24" height="20" /></a></a></p>
+          <p>&#8226; 喜欢<span class="honey-text">花花</span>、吃茶、看书、看电视剧和动画；有时也喜欢爬山</p>
+          <p>&#8226; 自我成長，拥抱变化</p>
           <p>&#8226; 力求『昆乱不挡』</p>
         </div>
         <div id="social">
           <p class="text-center">
-            <a
-              class="site-social-link"
-              href="http://blog.rosuh.me"
-              title="Blog"
-            >
-              <img
-                class="site-social-img"
-                src="assets/images/favicon-96x96.png"
-                alt="Blog"
-                width="24"
-                height="24"
-              />
+            <a class="site-social-link" href="http://blog.rosuh.me" title="Blog">
+              <img class="site-social-img" src="assets/images/favicon-96x96.png" alt="Blog" width="24" height="24" />
             </a>
-            <a
-              class="site-social-link"
-              href="https://github.com/rosuh"
-              title="GitHub"
-            >
-              <img
-                class="site-social-img"
-                src="assets/images/github.svg"
-                alt="GitHub"
-                width="24"
-                height="24"
-              />
+            <a class="site-social-link" href="https://github.com/rosuh" title="GitHub">
+              <img class="site-social-img" src="assets/images/github.svg" alt="GitHub" width="24" height="24" />
             </a>
 
-            <a
-              class="site-social-link"
-              href="https://v2ex.com/member/rosu"
-              title="V2EX"
-            >
-              <img
-                class="site-social-img"
-                src="assets/images/v2ex.svg"
-                alt="V2EX"
-                width="24"
-                height="24"
-              />
+            <a class="site-social-link" href="https://v2ex.com/member/rosu" title="V2EX">
+              <img class="site-social-img" src="assets/images/v2ex.svg" alt="V2EX" width="24" height="24" />
             </a>
-            <a
-              class="site-social-link"
-              href="https://twitter.com/rosu_h"
-              title="Twitter"
-            >
-              <img
-                class="site-social-img"
-                src="assets/images/twitter.svg"
-                alt="Twitter"
-                width="24"
-                height="24"
-              />
+            <a class="site-social-link" href="https://twitter.com/rosu_h" title="Twitter">
+              <img class="site-social-img" src="assets/images/twitter.svg" alt="Twitter" width="24" height="24" />
             </a>
 
-            <a
-              class="site-social-link"
-              href="mailto:rosuh@qq.com"
-              title="Gmail"
-            >
-              <img
-                class="site-social-img"
-                src="assets/images/mail.svg"
-                alt="Gmail"
-                width="24"
-                height="24"
-              />
+            <a class="site-social-link" href="mailto:rosuh@qq.com" title="Email">
+              <img class="site-social-img" src="assets/images/mail.svg" alt="Gmail" width="24" height="24" />
             </a>
           </p>
         </div>
       </div>
     </div>
-    <div id="foot-container">
-      <div id="footer" />
-    </div>
-  </body>
+  </div>
+
+  <div id="foot-container">
+    <div id="footer" />
+  </div>
+</body>
+
 </html>
