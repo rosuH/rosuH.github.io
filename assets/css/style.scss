@@ -147,13 +147,6 @@ svg {
   position: relative;
 }
 
-#widget-text-a,
-#widget-text-b,
-#widget-text-c,
-#widget-text-d {
-  writing-mode: vertical-rl;
-}
-
 .content-title .title::before {
   content: attr(data-text);
   position: absolute;
@@ -173,7 +166,6 @@ svg {
 @keyframes glitch-1 {
   0% {
         clip-path: polygon(50% 50%, 70% 10%, 100% 100%, 12% 50%);
-
   }
 }
 

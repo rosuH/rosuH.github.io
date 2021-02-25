@@ -154,15 +154,6 @@ svg {
   position: relative;
 }
 
-#widget-text-a,
-#widget-text-b,
-#widget-text-c,
-#widget-text-d {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-}
-
 .content-title .title::before {
   content: attr(data-text);
   position: absolute;
@@ -195,37 +186,37 @@ svg {
 
 @-webkit-keyframes whiteMove {
   8% {
-    top: 47px;
+    top: 19px;
   }
   14% {
-    top: 4px;
+    top: 7px;
   }
   20% {
-    top: 50px;
+    top: 12px;
   }
   32% {
-    top: 21px;
+    top: 25px;
   }
   99% {
-    top: 18px;
+    top: 24px;
   }
 }
 
 @keyframes whiteMove {
   8% {
-    top: 47px;
+    top: 19px;
   }
   14% {
-    top: 4px;
+    top: 7px;
   }
   20% {
-    top: 50px;
+    top: 12px;
   }
   32% {
-    top: 21px;
+    top: 25px;
   }
   99% {
-    top: 18px;
+    top: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
